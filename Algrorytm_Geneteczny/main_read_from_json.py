@@ -92,16 +92,14 @@ def random_neighbour_packing(packing):
 def random_packing(n):
     return [ random.randint(0,1) for _ in range(n) ]
 
-def load_knapsack(filename):
-    with open(filename, 'r') as knapsack_file:
-        return json.load(knapsack_file)
 
 def main(): #argparse=https://docs.python.org/3/library/argparse.html
     parser = argparse.ArgumentParser(prog="Algorytm Generyczny", description="Generic Algorythm", epilog="Write name of file")
     parser.add_argument('filename') #should be main.json
     args = parser.parse_args()
 
-    knapsack = load_knapsack(args.filename)
+    with open(args.filename, 'r') as knapsack_file:
+        knapsack = json.load(knapsack_file)
 
     #packing = [1,0,1,1]
     result = hill_climbing(lambda x: value_knapsack(knapsack, x ),
