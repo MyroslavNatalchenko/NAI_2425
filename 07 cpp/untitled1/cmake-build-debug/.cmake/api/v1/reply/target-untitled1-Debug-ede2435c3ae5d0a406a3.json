@@ -1,0 +1,658 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "untitled1.exe"
+		},
+		{
+			"path" : "untitled1.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu++20 -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/cmake-build-release"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/core/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/flann/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/imgproc/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/intensity_transform/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/ml/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/phase_unwrapping/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/photo/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/plot/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/quality/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/reg/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/signal/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/surface_matching/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/xphoto/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/dnn/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/dnn_superres/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/features2d/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/fuzzy/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/hfs/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/img_hash/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/imgcodecs/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/line_descriptor/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/saliency/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/text/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/videoio/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/calib3d/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/datasets/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/highgui/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/mcc/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/objdetect/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/rapid/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/rgbd/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/shape/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/structured_light/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/ts/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/video/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/videostab/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/wechat_qrcode/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/xfeatures2d/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/ximgproc/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/xobjdetect/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/aruco/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/bgsegm/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/bioinspired/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/ccalib/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/dnn_objdetect/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/dpm/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/face/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/gapi/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/optflow/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv-4.10.0/modules/stitching/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/superres/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/tracking/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/WORK/pantadeusz/opencv/opencv_contrib-4.10.0/modules/stereo/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "untitled1::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_gapi4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_stitching4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_aruco4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_bgsegm4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_bioinspired4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_ccalib4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_dnn_objdetect4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_dnn_superres4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_dpm4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_face4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_fuzzy4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_hfs4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_img_hash4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_intensity_transform4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_line_descriptor4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_mcc4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_quality4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_rapid4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_reg4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_rgbd4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_saliency4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_signal4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_stereo4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_structured_light4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_superres4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_surface_matching4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_tracking4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_videostab4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_wechat_qrcode4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_xfeatures2d4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_xobjdetect4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_xphoto4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_shape4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_highgui4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_datasets4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_plot4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_text4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_ml4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_phase_unwrapping4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_optflow4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_ximgproc4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_video4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_videoio4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_imgcodecs4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_objdetect4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_calib3d4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_dnn4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_features2d4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_flann4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_photo4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_imgproc4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\WORK\\pantadeusz\\opencv\\opencv-4.10.0\\cmake-build-release\\lib\\libopencv_core4100.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "untitled1",
+	"nameOnDisk" : "untitled1.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
