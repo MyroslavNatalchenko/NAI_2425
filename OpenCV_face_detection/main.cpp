@@ -9,12 +9,11 @@ using namespace cv;
 //void detectAndDisplay( Mat frame );
 
 std::vector<cv::Rect> detectFaces(const Mat &frame_gray);
-Mat drawFaces(Mat frame, const std::vector<cv::Rect> &faces);
+Mat drawFaces(Mat &frame_gray, const std::vector<cv::Rect> &faces, Mat frame);
 
 CascadeClassifier face_cascade;
 CascadeClassifier eyes_cascade;
-int main( int argc, const char** argv )
-{
+int main(int argc, const char **argv) {
     CommandLineParser parser(argc, argv,
                              "{help h||}"
                              "{face_cascade|data/haarcascades/haarcascade_frontalface_alt.xml|Path to face cascade.}"
@@ -23,8 +22,8 @@ int main( int argc, const char** argv )
     parser.about( "\nThis program demonstrates using the cv::CascadeClassifier class to detect objects (Face + eyes) in a video stream.\n"
                   "You can use Haar or LBP features.\n\n" );
     parser.printMessage();
-    String face_cascade_name = samples::findFile( parser.get<String>("face_cascade") );
-    String eyes_cascade_name = samples::findFile( parser.get<String>("eyes_cascade") );
+    String face_cascade_name = "haarcascade_frontalface_alt.xml";
+    String eyes_cascade_name = "haarcascade_eye_tree_eyeglasses.xml";
     //-- 1. Load the cascades
     if( !face_cascade.load( face_cascade_name ) )
     {
@@ -46,6 +45,7 @@ int main( int argc, const char** argv )
         return -1;
     }
     Mat frame;
+    int max_faces=-1;
     while (capture.read(frame))
     {
         if(frame.empty())
@@ -58,22 +58,20 @@ int main( int argc, const char** argv )
         cvtColor(frame, frame_gray, COLOR_BGR2GRAY);
         equalizeHist(frame_gray, frame_gray);
 
-        int max=-1;
         // 2. Funkcja która zwraca wszystkie twarzy które mają 2 oczy
         std::vector<cv::Rect> faces = detectFaces(frame_gray);
         cout << "Ilość twarz na ekranie: " << faces.size() << endl;
-        if (faces.size() > max){
-            max = faces.size();
-        }
+
+        max_faces = max(max_faces, (int)(faces.size()));
 
         // 3. Rysowanie twarzy
-        frame = drawFaces(frame, faces);
+        frame = drawFaces(frame_gray, faces, frame);
         cv::flip(frame, frame, 1); //odbicie w lustrze
         imshow("Capture - Face detection", frame);
 
         if( waitKey(10) == 27 )
         {
-            cout << "Maksymalna ilość wykrytych twarz: " << max << endl;
+            cout << "Maksymalna ilość wykrytych twarz: " << max_faces << endl;
             break; // escape
         }
     }
@@ -119,12 +117,22 @@ std::vector<cv::Rect> detectFaces(const Mat &frame_gray) // & - wskaźnik (adres
     return filtered_list_of_faces;
 }
 
-Mat drawFaces(Mat frame, const std::vector<cv::Rect> &faces)
+Mat drawFaces(Mat &frame_gray, const std::vector<cv::Rect> &faces, Mat frame)
 {
     for (size_t i = 0; i < faces.size(); i++)
     {
         Point center(faces[i].x + faces[i].width / 2, faces[i].y + faces[i].height / 2);
         ellipse(frame, center, Size(faces[i].width / 2, faces[i].height / 2), 0, 0, 360, Scalar(255, 0, 255), 4);
+
+        Mat faceROI = frame_gray(faces[i]);
+        std::vector<cv::Rect> eyes;
+        eyes_cascade.detectMultiScale(faceROI, eyes);
+        for ( size_t j = 0; j < eyes.size(); j++ )
+        {
+            Point eye_center( faces[i].x + eyes[j].x + eyes[j].width/2, faces[i].y + eyes[j].y + eyes[j].height/2 );
+            int radius = cvRound( (eyes[j].width + eyes[j].height)*0.25 );
+            circle( frame, eye_center, radius, Scalar( 255, 0, 0 ), 4 );
+        }
     }
 
     return frame;
